@@ -16,6 +16,6 @@ resource "aws_instance" "server_cluster" {
   ami = "ami-0565af6e282977273"
   count = 5
   tags = {
-    Name = "cluster server ${aws_instance.server_cluster.count[index]}"
+    Name = "cluster server"
   }
 }
